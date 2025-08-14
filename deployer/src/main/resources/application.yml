@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: deployer
+server:
+  port: 8520
+
+webhooks:
+  list:
+    - id: hajimi-dist
+      secret: fake-secret
+      distPath: /fake-distPath
+      tempPath: /fake-tempPath
+      replace:
+        enabled: true
+        target: "ORIGINAL_TEXT"
+        replacement: "NEW_TEXT"
